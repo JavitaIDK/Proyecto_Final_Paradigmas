@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Razas de Perros</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/filtrar.js" defer></script>
+    
+    
+</head>
+
+<body>
+    <h1>Filtro de Razas de Perros</h1>
+    <div class="filters">
+        <div class="filter-group">
+            <label for="origin">Origen</label>
+            <input type="text" id="origin" placeholder="Ej: Mexico">
+        </div>
+
+        <div class="filter-group">
+            <label for="type">Tipo</label>
+            <input type="text" id="type" placeholder="Ej: Terrier">
+        </div>
+
+        <div class="filter-group">
+            <label for="friendly-rating">Amabilidad</label>
+            <select id="friendly-rating">
+                <option value="">Cualquiera</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="size">Tamaño</label>
+            <select id="size">
+                <option value="">Cualquiera</option>
+                <option value="pequeño">Pequeño</option>
+                <option value="pequeño-mediano">Pequeno-Mediano</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+                <option value="gigante">Gigante</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="grooming-needs">Cuidado del Pelaje</label>
+            <select id="grooming-needs">
+                <option value="">Cualquiera</option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="good-children">Bueno con Niños</label>
+            <select id="good-children">
+                <option value="">Cualquiera</option>
+                <option value="Yes">Si</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="intelligence">Inteligencia</label>
+            <select id="intelligence">
+                <option value="">Cualquiera</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="shedding-level">Nivel de Mudanza</label>
+            <select id="shedding-level">
+                <option value="">Cualquiera</option>
+                <option value="baja">Baja</option>
+                <option value="media">Moderado</option>
+                <option value="alta">Alta</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="training-difficulty">Dificultad de Entrenamiento</label>
+            <select id="training-difficulty">
+                <option value="">Cualquiera</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+        </div>
+    </div>
+    <button onclick="filtrar()">Filtrar</button>
+    <div id="results">
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('Fondo.png'); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegura que el body ocupe el 100% de la altura de la ventana */
+    background-color: #e1d0af; /* Color de fondo en caso de que la imagen no se vea correctamente */
+
+}
+h1 {
+    font-family: Arial, sans-serif; /* Usar la fuente Roboto */
+    font-size: 3rem;
+    color: #000000; /* Color del título */
+    text-align: center; /* Centrado del texto */
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten si no caben en la misma fila */
+    
+    gap:10px; /* Espacio entre las tarjetas */
+}
+
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+.filter-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000000; /* Color llamativo para los labels */
+}
+
+.dog-card {
+    border: 2px solid #b92f6e; /* Bordes con color suave */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+    max-width: 500px;
+    
+    color: #000000; /* Color de texto claro */
+}
+
+.dog-card h2 {
+    margin: 0 0 10px;
+    color: #000000; /* Título en color destacado */
+}
+
+button {
+    background-color: #be3274;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto de transición al hacer hover */
+}
+button:hover {
+    background-color: #531228; /* Hover de botón con un tono más oscuro */
+}
+button:focus {
+    outline: none; /* Eliminar borde de enfoque */
+}
