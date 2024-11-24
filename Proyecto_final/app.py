@@ -94,6 +94,6 @@ class DogAPI:
 
 
 if __name__ == '__main__':
-    dog_data = DogData('data/dogs.json')
+    dog_data = DogData('Proyecto_final/data/dogs.json')
     api = DogAPI(dog_data)
     api.run()
